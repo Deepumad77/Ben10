@@ -139,7 +139,10 @@ def send_start(bot, update):
     text = PM_START
 
 
-    
+    keyboard = [[InlineKeyboardButton(text="🛠 Control panel", callback_data="cntrl_panel_M")]]
+    keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
+        InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
+
 
 
 
